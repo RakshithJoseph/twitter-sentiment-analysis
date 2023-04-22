@@ -1,0 +1,27 @@
+.container {
+    background-color: rgb(153, 241, 241);
+
+}
+
+.bd {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#c1 {
+    background-color: aliceblue;
+}
+
+p {
+    font-size: 50px;
+    font-weight: 600;
+    color: red;
+}
+
+
+
+/* #button {
+    margin: 10px;
+} */

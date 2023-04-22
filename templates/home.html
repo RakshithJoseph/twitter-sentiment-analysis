@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/book.css" />
+    <title>Sentiment analysis</title>
+  </head>
+  <body class="bd">
+    <div class="container m-5 p-2 border border-dark rounded text-center">
+      <form action="{{url_for('predict')}}" method="post">
+        <h1 class="text-center border border-dark rounded m-4 p-2" id="c1">
+          Sentiment analysis of tweets
+        </h1>
+        <h3>Enter the Hashtag :</h3>
+        <input type="text" name="hashtag" />
+        <br />
+        <h3>Enter the number of tweets :</h3>
+        <input type="text" name="tweets" />
+        <br />
+        <h3>Enter since when to fetch (Format: YYYY-MM-DD):</h3>
+        <input type="text" name="date" />
+        <br />
+        <br />
+
+        <button class="btn btn-outline-danger" type="submit">Predict</button>
+      </form>
+    </div>
+  </body>
+</html>
