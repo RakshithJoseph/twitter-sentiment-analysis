@@ -10,10 +10,10 @@ model = pickle.load(open('model.pickle', 'rb'))
 vect = pickle.load(open('vec.pickle', 'rb'))
 
 
-consumer_key = "10yh2JisP7UC1yrJZc124IYqH"
-consumer_secret =  "WIwZeogjvWJe0vQLfaNRQ2eosfwZgiE53rE8IREabFpOzMPMKS"
-access_key ="1437038540391649284-mrXjVY9Xw92V5TsymunFkiiIzV1iXg"
-access_secret = "wynX8FjopgU33joYxedQXhErvhmdQaEZMyMkqIZyrpPm4"
+consumer_key = "*************************************"
+consumer_secret ="*************************************"
+access_key ="********************************************"
+access_secret = "****************************************"
 db = pd.DataFrame(columns=['username','text',])
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
